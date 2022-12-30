@@ -13,7 +13,7 @@ Astra Solaris is a set of software projects dedicated to astronomy and astronaut
 
 ## Visit website
 
-Know more about this project at www.astrasolaris.org. The on-line access to the main model can be found at www.astrasolaris.org/app/solarsystem.
+Know more about this project at www.astrasolaris.org. The on-line access to the main model can be found at [www.astrasolaris.org/app/solarsystem.](https://astrasolaris.org/app/solarsystem)
 
 For the list of active projects you can visit www.astrasolaris.org/site/projects
 
