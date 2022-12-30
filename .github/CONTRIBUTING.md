@@ -41,7 +41,7 @@ When you’ve decided to make changes, start with the following:
 
 * Update your local repo
         
-      git pull https://github.com/SEscobedo/AstraSolaris.git
+      git pull https://github.com/SDEscobedo/AstraSolaris.git
       git push
 
 * Make a new branch from the dev branch
@@ -66,4 +66,4 @@ When you’ve decided to make changes, start with the following:
 * Create separate branches per patch or feature.
 * If you make a PR but it is not actually ready to be pulled into the dev branch then please [convert it to a draft PR](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/changing-the-stage-of-a-pull-request#converting-a-pull-request-to-a-draft).
 
-This project is currently contributed to mostly via everyone's spare time. Please keep that in mind as it may take some time for the appropriate feedback to get to you. If you are unsure about adding a new feature, it might be better to ask first to see whether other people think it's a good idea. You can do this at github discussions https://github.com/SEscobedo/AstraSolaris/discussions.
+This project is currently contributed to mostly via everyone's spare time. Please keep that in mind as it may take some time for the appropriate feedback to get to you. If you are unsure about adding a new feature, it might be better to ask first to see whether other people think it's a good idea. You can do this at github discussions https://github.com/SDEscobedo/AstraSolaris/discussions.

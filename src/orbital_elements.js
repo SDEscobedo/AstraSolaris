@@ -75,7 +75,7 @@ class App {
          var div = document.createElement( 'div' );
          div.innerHTML = `<h3><a href="https://spaceflight.nasa.gov/realdata/elements/index.html" target="_blank" rel="noopener">Elementos orbitales</a></h3>
          Animación y modelo para <a href="http://www.astrasolaris.org" target="_blank" rel="noopener">AstraSolaris</a>.<br/>
-         Proyecto en construcción. <a href="https://github.com/SEscobedo/AstraSolaris/tree/master/galery/orbital_elements.html" target="_blank" rel="noopener">Ver Código fuente</a>.<br/>`;   
+         Proyecto en construcción. <a href="https://github.com/SDEscobedo/AstraSolaris/tree/master/galery/orbital_elements.html" target="_blank" rel="noopener">Ver Código fuente</a>.<br/>`;   
          
         
 

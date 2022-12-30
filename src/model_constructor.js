@@ -15,7 +15,7 @@ const origin = new THREE.Vector3(0,0,0);
  var JulianDateIndex;
 
 
- const root = "https://raw.githubusercontent.com/SEscobedo/AstraSolaris/master/ephemeris"
+ const root = "https://raw.githubusercontent.com/SDEscobedo/AstraSolaris/master/ephemeris"
 
  //planetary ephemerids
  var url = [];
@@ -438,7 +438,7 @@ export function CreateArtificialSatellites(EarthScale,UA,planet,SatelliteData, O
 export function CreateOrbits(UA,scene){
     //Import orbit parameters
     
-    const urlPlanets = "https://raw.githubusercontent.com/SEscobedo/AstraSolaris/master/data/planets_run.csv";
+    const urlPlanets = "https://raw.githubusercontent.com/SDEscobedo/AstraSolaris/master/data/planets_run.csv";
     
     Papa.parse(urlPlanets, {
         download: true,
