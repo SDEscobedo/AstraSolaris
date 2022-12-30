@@ -2,8 +2,8 @@
 
 ![banner](./img_as/bg-readme.jpg?raw=true)
 
-![Node.js CI](https://github.com/SEscobedo/AstraSolaris/workflows/Node.js%20CI/badge.svg)
-![GitHub](https://img.shields.io/github/license/SEscobedo/AstraSolaris)
+![Node.js CI](https://github.com/SDEscobedo/AstraSolaris/workflows/Node.js%20CI/badge.svg)
+![GitHub](https://img.shields.io/github/license/SDEscobedo/AstraSolaris)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/fb766ed0-27e1-4c4e-82bf-a0fd455113a6/deploy-status)](https://app.netlify.com/sites/astrasolaris/deploys)
 
 _Open Source 3d modeling for astronomy and astronautics._
@@ -26,7 +26,7 @@ This project is mean to be open to different kinds of collaboration. You can con
 * Using Astra Solaris projects and finding problems.
 * Sharing.
 
-To collaborate this way you can join in the [discussions](https://github.com/SEscobedo/AstraSolaris/discussions). You can also contact us at www.astrasolaris.org/site/contact
+To collaborate this way you can join in the [discussions](https://github.com/SDEscobedo/AstraSolaris/discussions). You can also contact us at www.astrasolaris.org/site/contact
 
 * Supporting Astra Soalaris. For supporting refer to the _Sponsor this project_ in this repo.
 

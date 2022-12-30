@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SEscobedo/AstraSolaris"
+    "url": "https://github.com/SDEscobedo/AstraSolaris"
   },
   "scripts": {
     "build": "rollup -c \"rollup_config.js\"",
@@ -14,7 +14,7 @@
   "author": "Salvador D. Escobedo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SEscobedo/AstraSolaris/issues"
+    "url": "https://github.com/SDEscobedo/AstraSolaris/issues"
   },
   "keywords": [
     "three.js",
