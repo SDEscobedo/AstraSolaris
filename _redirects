@@ -7,6 +7,3 @@
 /galery/3d_periodictable.html            /app/gallery/3d_periodictable
 /galery/planet_size_comp.html            /app/gallery/planet_size_comp
 /index_galery.html                       /site/projects
-
-# Redirects .com to .org
-https://astrasolaris.com/* https://astrasolaris.org/*:splat 301!
