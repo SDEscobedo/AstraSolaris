@@ -1,0 +1,527 @@
+/* ==========================================================================
+   AstraSolaris Design System - CSS Custom Properties
+   ========================================================================== */
+
+:root {
+  /* ==========================================================================
+     Color Palette - Cosmic Theme
+     ========================================================================== */
+
+  /* Primary - Deep Space Indigo */
+  --color-primary-50: #eef2ff;
+  --color-primary-100: #e0e7ff;
+  --color-primary-200: #c7d2fe;
+  --color-primary-300: #a5b4fc;
+  --color-primary-400: #818cf8;
+  --color-primary-500: #6366f1;
+  --color-primary-600: #4f46e5;
+  --color-primary-700: #4338ca;
+  --color-primary-800: #3730a3;
+  --color-primary-900: #312e81;
+  --color-primary-950: #1e1b4b;
+
+  /* Secondary - Nebula Purple */
+  --color-secondary-50: #faf5ff;
+  --color-secondary-100: #f3e8ff;
+  --color-secondary-200: #e9d5ff;
+  --color-secondary-300: #d8b4fe;
+  --color-secondary-400: #c084fc;
+  --color-secondary-500: #a855f7;
+  --color-secondary-600: #9333ea;
+  --color-secondary-700: #7e22ce;
+  --color-secondary-800: #6b21a8;
+  --color-secondary-900: #581c87;
+  --color-secondary-950: #3b0764;
+
+  /* Accent - Solar Gold */
+  --color-accent-50: #fffbeb;
+  --color-accent-100: #fef3c7;
+  --color-accent-200: #fde68a;
+  --color-accent-300: #fcd34d;
+  --color-accent-400: #fbbf24;
+  --color-accent-500: #f59e0b;
+  --color-accent-600: #d97706;
+  --color-accent-700: #b45309;
+  --color-accent-800: #92400e;
+  --color-accent-900: #78350f;
+  --color-accent-950: #451a03;
+
+  /* Success - Aurora Green */
+  --color-success-50: #ecfdf5;
+  --color-success-100: #d1fae5;
+  --color-success-200: #a7f3d0;
+  --color-success-300: #6ee7b7;
+  --color-success-400: #34d399;
+  --color-success-500: #10b981;
+  --color-success-600: #059669;
+  --color-success-700: #047857;
+  --color-success-800: #065f46;
+  --color-success-900: #064e3b;
+  --color-success-950: #022c22;
+
+  /* Warning - Supernova Orange */
+  --color-warning-50: #fff7ed;
+  --color-warning-100: #ffedd5;
+  --color-warning-200: #fed7aa;
+  --color-warning-300: #fdba74;
+  --color-warning-400: #fb923c;
+  --color-warning-500: #f97316;
+  --color-warning-600: #ea580c;
+  --color-warning-700: #c2410c;
+  --color-warning-800: #9a3412;
+  --color-warning-900: #7c2d12;
+  --color-warning-950: #431407;
+
+  /* Error - Red Giant */
+  --color-error-50: #fef2f2;
+  --color-error-100: #fee2e2;
+  --color-error-200: #fecaca;
+  --color-error-300: #fca5a5;
+  --color-error-400: #f87171;
+  --color-error-500: #ef4444;
+  --color-error-600: #dc2626;
+  --color-error-700: #b91c1c;
+  --color-error-800: #991b1b;
+  --color-error-900: #7f1d1d;
+  --color-error-950: #450a0a;
+
+  /* Info - Celestial Cyan */
+  --color-info-50: #ecfeff;
+  --color-info-100: #cffafe;
+  --color-info-200: #a5f3fc;
+  --color-info-300: #67e8f9;
+  --color-info-400: #22d3ee;
+  --color-info-500: #06b6d4;
+  --color-info-600: #0891b2;
+  --color-info-700: #0e7490;
+  --color-info-800: #155e75;
+  --color-info-900: #164e63;
+  --color-info-950: #083344;
+
+  /* ==========================================================================
+     Neutral Colors - Deep Space Grays
+     ========================================================================== */
+
+  --color-neutral-0: #ffffff;
+  --color-neutral-50: #f8fafc;
+  --color-neutral-100: #f1f5f9;
+  --color-neutral-200: #e2e8f0;
+  --color-neutral-300: #cbd5e1;
+  --color-neutral-400: #94a3b8;
+  --color-neutral-500: #64748b;
+  --color-neutral-600: #475569;
+  --color-neutral-700: #334155;
+  --color-neutral-800: #1e293b;
+  --color-neutral-850: #172033;
+  --color-neutral-900: #0f172a;
+  --color-neutral-925: #0c1222;
+  --color-neutral-950: #0a0e17;
+  --color-neutral-1000: #050810;
+
+  /* ==========================================================================
+     Semantic Colors
+     ========================================================================== */
+
+  /* Background Colors */
+  --bg-primary: var(--color-neutral-950);
+  --bg-secondary: var(--color-neutral-925);
+  --bg-tertiary: var(--color-neutral-900);
+  --bg-elevated: var(--color-neutral-850);
+  --bg-surface: var(--color-neutral-800);
+  --bg-overlay: rgba(10, 14, 23, 0.85);
+  --bg-glass: rgba(15, 23, 42, 0.6);
+  --bg-code: rgba(30, 41, 59, 0.5);
+
+  /* Text Colors */
+  --text-primary: var(--color-neutral-100);
+  --text-secondary: var(--color-neutral-300);
+  --text-tertiary: var(--color-neutral-400);
+  --text-muted: var(--color-neutral-500);
+  --text-disabled: var(--color-neutral-600);
+  --text-inverse: var(--color-neutral-950);
+  --text-link: var(--color-primary-400);
+  --text-link-hover: var(--color-primary-300);
+
+  /* Border Colors */
+  --border-subtle: rgba(148, 163, 184, 0.1);
+  --border-default: rgba(148, 163, 184, 0.2);
+  --border-strong: rgba(148, 163, 184, 0.3);
+  --border-focus: var(--color-primary-500);
+  --border-error: var(--color-error-500);
+
+  /* ==========================================================================
+     Gradient Definitions
+     ========================================================================== */
+
+  /* Background Gradients */
+  --gradient-cosmic: linear-gradient(135deg, var(--color-neutral-950) 0%, var(--color-primary-950) 50%, var(--color-neutral-950) 100%);
+  --gradient-nebula: linear-gradient(135deg, var(--color-primary-950) 0%, var(--color-secondary-950) 100%);
+  --gradient-aurora: linear-gradient(135deg, var(--color-primary-900) 0%, var(--color-secondary-900) 50%, var(--color-info-900) 100%);
+  --gradient-deep-space: radial-gradient(ellipse at center, var(--color-neutral-900) 0%, var(--color-neutral-950) 70%, var(--color-neutral-1000) 100%);
+
+  /* Accent Gradients */
+  --gradient-primary: linear-gradient(135deg, var(--color-primary-500) 0%, var(--color-primary-600) 100%);
+  --gradient-secondary: linear-gradient(135deg, var(--color-secondary-500) 0%, var(--color-secondary-600) 100%);
+  --gradient-accent: linear-gradient(135deg, var(--color-accent-400) 0%, var(--color-accent-500) 100%);
+  --gradient-cta: linear-gradient(135deg, var(--color-primary-500) 0%, var(--color-secondary-500) 100%);
+
+  /* Text Gradients */
+  --gradient-text-primary: linear-gradient(135deg, var(--color-primary-300) 0%, var(--color-primary-400) 100%);
+  --gradient-text-cosmic: linear-gradient(135deg, var(--color-primary-300) 0%, var(--color-secondary-400) 50%, var(--color-accent-400) 100%);
+  --gradient-text-solar: linear-gradient(135deg, var(--color-accent-300) 0%, var(--color-accent-400) 100%);
+
+  /* Glow Effects */
+  --gradient-glow-primary: radial-gradient(circle, rgba(99, 102, 241, 0.4) 0%, transparent 70%);
+  --gradient-glow-secondary: radial-gradient(circle, rgba(168, 85, 247, 0.3) 0%, transparent 70%);
+  --gradient-glow-accent: radial-gradient(circle, rgba(251, 191, 36, 0.3) 0%, transparent 70%);
+
+  /* ==========================================================================
+     Typography
+     ========================================================================== */
+
+  /* Font Families */
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Space Grotesk", var(--font-sans);
+  --font-mono: "JetBrains Mono", "Fira Code", "SF Mono", Consolas, monospace;
+
+  /* Font Sizes - Fluid Typography Scale */
+  --text-xs: clamp(0.6875rem, 0.65rem + 0.1vw, 0.75rem);
+  --text-sm: clamp(0.8125rem, 0.775rem + 0.15vw, 0.875rem);
+  --text-base: clamp(0.9375rem, 0.9rem + 0.2vw, 1rem);
+  --text-lg: clamp(1.0625rem, 1rem + 0.3vw, 1.125rem);
+  --text-xl: clamp(1.1875rem, 1.1rem + 0.4vw, 1.25rem);
+  --text-2xl: clamp(1.375rem, 1.25rem + 0.6vw, 1.5rem);
+  --text-3xl: clamp(1.625rem, 1.45rem + 0.9vw, 1.875rem);
+  --text-4xl: clamp(1.875rem, 1.6rem + 1.4vw, 2.25rem);
+  --text-5xl: clamp(2.25rem, 1.85rem + 2vw, 3rem);
+  --text-6xl: clamp(2.75rem, 2.2rem + 2.8vw, 3.75rem);
+  --text-7xl: clamp(3.25rem, 2.5rem + 3.8vw, 4.5rem);
+  --text-8xl: clamp(4rem, 3rem + 5vw, 6rem);
+  --text-9xl: clamp(5rem, 3.5rem + 7.5vw, 8rem);
+
+  /* Font Weights */
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  /* Line Heights */
+  --leading-none: 1;
+  --leading-tight: 1.15;
+  --leading-snug: 1.35;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.65;
+  --leading-loose: 2;
+
+  /* Letter Spacing */
+  --tracking-tighter: -0.05em;
+  --tracking-tight: -0.025em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.025em;
+  --tracking-wider: 0.05em;
+  --tracking-widest: 0.1em;
+
+  /* ==========================================================================
+     Spacing Scale
+     ========================================================================== */
+
+  --space-0: 0;
+  --space-px: 1px;
+  --space-0-5: 0.125rem;
+  --space-1: 0.25rem;
+  --space-1-5: 0.375rem;
+  --space-2: 0.5rem;
+  --space-2-5: 0.625rem;
+  --space-3: 0.75rem;
+  --space-3-5: 0.875rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-7: 1.75rem;
+  --space-8: 2rem;
+  --space-9: 2.25rem;
+  --space-10: 2.5rem;
+  --space-11: 2.75rem;
+  --space-12: 3rem;
+  --space-14: 3.5rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-28: 7rem;
+  --space-32: 8rem;
+  --space-36: 9rem;
+  --space-40: 10rem;
+  --space-44: 11rem;
+  --space-48: 12rem;
+  --space-52: 13rem;
+  --space-56: 14rem;
+  --space-60: 15rem;
+  --space-64: 16rem;
+  --space-72: 18rem;
+  --space-80: 20rem;
+  --space-96: 24rem;
+
+  /* ==========================================================================
+     Layout
+     ========================================================================== */
+
+  /* Container Widths */
+  --container-xs: 20rem;
+  --container-sm: 24rem;
+  --container-md: 28rem;
+  --container-lg: 32rem;
+  --container-xl: 36rem;
+  --container-2xl: 42rem;
+  --container-3xl: 48rem;
+  --container-4xl: 56rem;
+  --container-5xl: 64rem;
+  --container-6xl: 72rem;
+  --container-7xl: 80rem;
+  --container-full: 100%;
+
+  /* Section Spacing */
+  --section-spacing-sm: clamp(3rem, 6vw, 5rem);
+  --section-spacing-md: clamp(4rem, 8vw, 7rem);
+  --section-spacing-lg: clamp(5rem, 10vw, 9rem);
+  --section-spacing-xl: clamp(6rem, 12vw, 12rem);
+
+  /* Content Width */
+  --content-width: min(90vw, var(--container-7xl));
+  --content-width-narrow: min(90vw, var(--container-4xl));
+  --content-width-wide: min(95vw, var(--container-7xl));
+
+  /* ==========================================================================
+     Border Radius
+     ========================================================================== */
+
+  --radius-none: 0;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+  --radius-4xl: 2rem;
+  --radius-full: 9999px;
+
+  /* ==========================================================================
+     Shadows
+     ========================================================================== */
+
+  /* Elevation Shadows */
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.4), 0 1px 2px -1px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.4);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.4);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+
+  /* Glow Shadows */
+  --glow-primary-sm: 0 0 10px rgba(99, 102, 241, 0.3);
+  --glow-primary-md: 0 0 20px rgba(99, 102, 241, 0.4);
+  --glow-primary-lg: 0 0 40px rgba(99, 102, 241, 0.5);
+  --glow-primary-xl: 0 0 60px rgba(99, 102, 241, 0.5), 0 0 100px rgba(99, 102, 241, 0.3);
+
+  --glow-secondary-sm: 0 0 10px rgba(168, 85, 247, 0.3);
+  --glow-secondary-md: 0 0 20px rgba(168, 85, 247, 0.4);
+  --glow-secondary-lg: 0 0 40px rgba(168, 85, 247, 0.5);
+
+  --glow-accent-sm: 0 0 10px rgba(251, 191, 36, 0.3);
+  --glow-accent-md: 0 0 20px rgba(251, 191, 36, 0.4);
+  --glow-accent-lg: 0 0 40px rgba(251, 191, 36, 0.5);
+
+  /* Card Shadows */
+  --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(148, 163, 184, 0.1);
+  --shadow-card-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(148, 163, 184, 0.15);
+
+  /* ==========================================================================
+     Animation & Transitions
+     ========================================================================== */
+
+  /* Durations */
+  --duration-instant: 50ms;
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 400ms;
+  --duration-slower: 600ms;
+  --duration-slowest: 1000ms;
+
+  /* Easing Functions */
+  --ease-linear: linear;
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --ease-elastic: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  --ease-smooth: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  /* Common Transitions */
+  --transition-colors: color var(--duration-fast) var(--ease-out), background-color var(--duration-fast) var(--ease-out), border-color var(--duration-fast) var(--ease-out);
+  --transition-opacity: opacity var(--duration-normal) var(--ease-out);
+  --transition-transform: transform var(--duration-normal) var(--ease-out);
+  --transition-shadow: box-shadow var(--duration-normal) var(--ease-out);
+  --transition-all: all var(--duration-normal) var(--ease-out);
+
+  /* ==========================================================================
+     Z-Index Scale
+     ========================================================================== */
+
+  --z-behind: -1;
+  --z-base: 0;
+  --z-raised: 10;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-fixed: 300;
+  --z-overlay: 400;
+  --z-modal: 500;
+  --z-popover: 600;
+  --z-tooltip: 700;
+  --z-notification: 800;
+  --z-maximum: 9999;
+
+  /* ==========================================================================
+     Breakpoints (for reference - use in media queries)
+     ========================================================================== */
+
+  --breakpoint-xs: 480px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  /* ==========================================================================
+     Component-Specific Tokens
+     ========================================================================== */
+
+  /* Header */
+  --header-height: 4rem;
+  --header-height-scrolled: 3.5rem;
+  --header-bg: rgba(10, 14, 23, 0.8);
+  --header-bg-scrolled: rgba(10, 14, 23, 0.95);
+  --header-border: var(--border-subtle);
+  --header-backdrop-blur: 12px;
+
+  /* Footer */
+  --footer-bg: var(--bg-secondary);
+  --footer-border: var(--border-subtle);
+
+  /* Buttons */
+  --btn-height-sm: 2rem;
+  --btn-height-md: 2.5rem;
+  --btn-height-lg: 3rem;
+  --btn-height-xl: 3.5rem;
+  --btn-padding-x-sm: var(--space-3);
+  --btn-padding-x-md: var(--space-4);
+  --btn-padding-x-lg: var(--space-6);
+  --btn-font-size-sm: var(--text-sm);
+  --btn-font-size-md: var(--text-base);
+  --btn-font-size-lg: var(--text-lg);
+
+  /* Cards */
+  --card-bg: rgba(30, 41, 59, 0.4);
+  --card-bg-hover: rgba(30, 41, 59, 0.6);
+  --card-border: var(--border-subtle);
+  --card-border-hover: var(--border-default);
+  --card-radius: var(--radius-2xl);
+  --card-padding: var(--space-6);
+
+  /* Code Blocks */
+  --code-bg: rgba(15, 23, 42, 0.6);
+  --code-border: var(--border-subtle);
+  --code-radius: var(--radius-lg);
+  --code-font-size: var(--text-sm);
+
+  /* Feature Icons */
+  --icon-size-sm: 1.25rem;
+  --icon-size-md: 1.5rem;
+  --icon-size-lg: 2rem;
+  --icon-size-xl: 2.5rem;
+  --icon-size-2xl: 3rem;
+
+  /* ==========================================================================
+     Syntax Highlighting Colors (Code Preview)
+     ========================================================================== */
+
+  --syntax-keyword: #c792ea;
+  --syntax-string: #c3e88d;
+  --syntax-number: #f78c6c;
+  --syntax-comment: #546e7a;
+  --syntax-function: #82aaff;
+  --syntax-variable: #f07178;
+  --syntax-operator: #89ddff;
+  --syntax-property: #ffcb6b;
+  --syntax-class: #ffcb6b;
+  --syntax-constant: #f78c6c;
+  --syntax-tag: #f07178;
+  --syntax-attribute: #c792ea;
+  --syntax-punctuation: #89ddff;
+
+  /* ==========================================================================
+     Motion & Animation Preferences
+     ========================================================================== */
+
+  --motion-reduce: 0;
+  --motion-enable: 1;
+}
+
+/* ==========================================================================
+   Reduced Motion Preferences
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-instant: 0ms;
+    --duration-fast: 0ms;
+    --duration-normal: 0ms;
+    --duration-slow: 0ms;
+    --duration-slower: 0ms;
+    --duration-slowest: 0ms;
+    --motion-reduce: 1;
+    --motion-enable: 0;
+  }
+}
+
+/* ==========================================================================
+   Color Scheme Overrides for High Contrast
+   ========================================================================== */
+
+@media (prefers-contrast: high) {
+  :root {
+    --border-subtle: rgba(148, 163, 184, 0.3);
+    --border-default: rgba(148, 163, 184, 0.5);
+    --border-strong: rgba(148, 163, 184, 0.7);
+    --text-secondary: var(--color-neutral-200);
+    --text-tertiary: var(--color-neutral-300);
+    --text-muted: var(--color-neutral-400);
+  }
+}
+
+/* ==========================================================================
+   Dark Mode Explicit (Default Theme)
+   ========================================================================== */
+
+[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+/* ==========================================================================
+   Print Styles
+   ========================================================================== */
+
+@media print {
+  :root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8fafc;
+    --text-primary: #0f172a;
+    --text-secondary: #334155;
+    --text-tertiary: #475569;
+    --shadow-card: none;
+    --glow-primary-sm: none;
+    --glow-primary-md: none;
+    --glow-primary-lg: none;
+  }
+}

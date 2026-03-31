@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@astra-solaris/shared": ["packages/shared/src"],
+      "@astra-solaris/shared/*": ["packages/shared/src/*"],
+      "@astra-solaris/core": ["packages/core/src"],
+      "@astra-solaris/core/*": ["packages/core/src/*"],
+      "@astra-solaris/engine": ["packages/engine/src"],
+      "@astra-solaris/engine/*": ["packages/engine/src/*"],
+      "@astra-solaris/terminal": ["packages/terminal/src"],
+      "@astra-solaris/terminal/*": ["packages/terminal/src/*"],
+      "@astra-solaris/editor": ["packages/editor/src"],
+      "@astra-solaris/editor/*": ["packages/editor/src/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist", "**/*.test.ts", "coverage"]
+}

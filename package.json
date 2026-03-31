@@ -1,42 +1,86 @@
 {
-  "name": "astrasolaris",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "astra-solaris",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Open-source platform for astronomical simulation built around the Astra scripting language",
+  "keywords": [
+    "astronomy",
+    "simulation",
+    "3d",
+    "threejs",
+    "dsl",
+    "space",
+    "solar-system"
+  ],
+  "homepage": "https://astra-solaris.org",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SDEscobedo/AstraSolaris"
+    "url": "https://github.com/astra-solaris/astra-solaris.git"
   },
-  "scripts": {
-    "build": "rollup -c \"rollup_config.js\"",
-    "start": "serve"
-  },
-  "author": "Salvador D. Escobedo",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/SDEscobedo/AstraSolaris/issues"
+  "author": {
+    "name": "AstraSolaris Team",
+    "url": "https://astra-solaris.org"
   },
-  "keywords": [
-    "three.js",
-    "javascript",
-    "3d",
-    "webgl",
-    "astronomy",
-    "physics",
-    "astronautics",
-    "astrodynamics"
-  ],
-  "homepage": "https://www.astrasolaris.org/",
-  "dependencies": {
-    "camera-controls": "^1.26.0",
-    "three": "^0.125.2",
-    "xterm": "^4.10.0"
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm -r --parallel dev",
+    "dev:website": "pnpm --filter @astra-solaris/website dev",
+    "build": "pnpm -r build",
+    "build:website": "pnpm --filter @astra-solaris/website build",
+    "preview": "pnpm -r --parallel preview",
+    "preview:website": "pnpm --filter @astra-solaris/website preview",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest --coverage",
+    "test:ui": "vitest --ui",
+    "lint": "eslint . --ext .ts,.tsx",
+    "lint:fix": "eslint . --ext .ts,.tsx --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "docs:dev": "pnpm --filter docs dev",
+    "docs:build": "pnpm --filter docs build",
+    "typecheck": "tsc --noEmit",
+    "typecheck:watch": "tsc --noEmit --watch",
+    "clean": "pnpm -r clean && rm -rf node_modules",
+    "clean:dist": "pnpm -r exec rm -rf dist",
+    "prepare": "husky install",
+    "validate-spec": "tsx scripts/validate-spec.ts",
+    "release": "tsx scripts/prepare-release.ts",
+    "generate-assets": "tsx scripts/generate-assets-manifest.ts"
   },
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "^7.1.1",
-    "dotenv": "^8.2.0",
-    "rollup": "^2.3.2",
-    "rollup-plugin-terser": "^5.3.0",
-    "serve": "^11.3.2"
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "@vitest/coverage-v8": "^1.0.0",
+    "@vitest/ui": "^1.0.0",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.1.0",
+    "tsx": "^4.6.0",
+    "typescript": "^5.3.0",
+    "vite": "^5.0.0",
+    "vitest": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.12.0",
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,yml,yaml}": [
+      "prettier --write"
+    ],
+    "*.css": [
+      "prettier --write"
+    ]
   }
 }

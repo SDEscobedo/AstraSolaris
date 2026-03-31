@@ -1,3 +1,123 @@
-node_modules
-build
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
+
+# Coverage
+coverage/
+
+# IDE / Editors
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.swp
+*.swo
+*~
+*.sublime-workspace
+*.sublime-project
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Environment files
 .env
+.env.local
+.env.*.local
+.env.development
+.env.production
+
+# VitePress
+docs/.vitepress/cache/
+docs/.vitepress/dist/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Testing
+*.lcov
+.nyc_output/
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+.temp/
+*.tmp
+*.temp
+
+# Cache directories
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+*.cache
+
+# TypeScript
+*.tsbuildinfo
+
+# Vitest
+vitest.config.ts.timestamp-*
+
+# Local development
+.local/
+*.local
+
+# Husky
+.husky/_/
+
+# Misc
+*.pem
+*.p12
+*.key
+*.crt
+
+# Debug
+.debug/
+
+# Playwright
+/test-results/
+/playwright-report/
+/playwright/.cache/
+
+# Turbo
+.turbo/
+
+# Vercel
+.vercel/
+
+# Netlify
+.netlify/
+
+# Service worker generated files
+sw.js
+workbox-*.js
+
+# Generated source maps (keep in dist)
+*.map
+!dist/**/*.map
+
+# Asset generation artifacts
+assets/.generated/
+
+# Lock files (keep pnpm-lock.yaml, ignore others)
+package-lock.json
+yarn.lock

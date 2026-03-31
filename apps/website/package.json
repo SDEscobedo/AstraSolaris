@@ -1,0 +1,29 @@
+{
+  "name": "@astra-solaris/website",
+  "version": "2.0.0",
+  "private": true,
+  "description": "AstraSolaris project landing page - an immersive entry point to the astronomical simulation platform",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5176",
+    "build": "tsc && vite build",
+    "preview": "vite preview --port 5176",
+    "clean": "rm -rf dist",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@tweenjs/tween.js": "^23.1.1",
+    "three": "^0.160.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.160.0",
+    "typescript": "^5.3.0",
+    "vite": "^5.0.0",
+    "vitest": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
