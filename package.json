@@ -12,15 +12,15 @@
     "space",
     "solar-system"
   ],
-  "homepage": "https://astra-solaris.org",
+  "homepage": "https://astrasolaris.sdescobedo.science/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/astra-solaris/astra-solaris.git"
+    "url": "https://github.com/SDEscobedo/AstraSolaris.git"
   },
   "license": "MIT",
   "author": {
     "name": "AstraSolaris Team",
-    "url": "https://astra-solaris.org"
+    "url": "https://astrasolaris.sdescobedo.science/"
   },
   "type": "module",
   "scripts": {
