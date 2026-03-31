@@ -1,9 +1,0 @@
-# Redirects from what the browser requests to what we serve
-/solarsystem                             /app/solarsystem
-/solarsystem.html                        /app/solarsystem
-/galery/orbital_elements.html            /app/gallery/orbital_elements
-/galery/sky.html                         /app/gallery/sky
-/galery/bennu.html                       /app/gallery/bennu
-/galery/3d_periodictable.html            /app/gallery/3d_periodictable
-/galery/planet_size_comp.html            /app/gallery/planet_size_comp
-/index_galery.html                       /site/projects

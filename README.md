@@ -1,4 +1,3 @@
-```markdown
 <div align="center">
 
 # 🌌 AstraSolaris
@@ -242,4 +241,3 @@ AstraSolaris is open source software licensed under the
 [⬆ Back to top](#-astrasolaris)
 
 </div>
-```
